@@ -15,7 +15,15 @@ body {
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 40px;
   margin-top: 0;
+  width: 100%;
 }
+
+.navbar-brand{
+  display: inline-block;
+  font-size: 19px;
+  line-height: 46px;
+}
+
 /* Sticky footer styles */
 html {
   position: relative;
@@ -26,10 +34,19 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+.navbar-right{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .footer {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
@@ -37,8 +54,13 @@ body {
 }
 
 .container {
+  margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  width: 80%;
 }
 
 p {
@@ -46,6 +68,12 @@ p {
   color: #c1c1c1;
 }
 
+ul,li{
+  list-style:none;
+  margin-left:15px;
+}
+
 a {
   color: inherit;
+  text-decoration: none;
 }
